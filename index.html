@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,31 +7,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Welcome to Git Control</h1>
-    <nav class="container">
-      <ul class="li-a">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" />
-    <label for="phone number">Phone Number:</label>
-    <input type="tel" id="phone number" name="phone number" />
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" />
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Git Control</a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Overview</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <label for="confirm-password">Confirm Password:</label>
-    <input type="password" id="confirm-password" name="confirm-password" />
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Welcome</p>
+          <h1>Git Control makes repository management simple.</h1>
+          <p class="hero-text">Launch your pages with a cohesive design, clear navigation, and polished interface for teams and tools.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="home.html">Explore overview</a>
+            <a class="button secondary" href="dashboard.html">Open dashboard</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="card">
+            <h2>Unified site</h2>
+            <p>Clean pages with consistent navigation, cards, and responsive layout across your Git Control site.</p>
+          </div>
+        </div>
+      </section>
 
-    <label for="email">Email</label>
-    <input type="email">
-    <h1>Testing Testing</h1>
+      <section class="features container">
+        <article class="feature-card">
+          <h2>Consistent design</h2>
+          <p>All pages now share the same header, colors, and responsive styling.</p>
+        </article>
+        <article class="feature-card">
+          <h2>Working links</h2>
+          <p>Navigation now points to actual pages, including About and Contact.</p>
+        </article>
+        <article class="feature-card">
+          <h2>Stable layout</h2>
+          <p>Fixed invalid HTML and removed duplicate tags so the page renders properly.</p>
+        </article>
+      </section>
+    </main>
 
-    <label for="price">Price</label>
-    <input type="number" id="price" name="price" step="0.01">
-</body>
-    <input type="email" />
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Git Control. A complete page set for repository workflows.</p>
+      </div>
+    </footer>
   </body>
 </html>
